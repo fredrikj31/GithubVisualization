@@ -60,7 +60,9 @@ aFeature.commit("Make it work", {
 	},
 });
 
-aFeature.commit("AkEcBziNcD3p9zjX8lkQbbSUJYjgbmf5XQpnS3YhhGkR3orUXoMh0BuOaL3VDpWiWUC2GAX9dSnuu5ve");
+aFeature.commit(
+	"AkEcBziNcD3p9zjX8lkQbbSUJYjgbmf5XQpnS3YhhGkR3orUXoMh0BuOaL3VDpWiWUC2GAX9dSnuu5ve"
+);
 aFeature.commit("Make it fast");
 
 develop.merge({

@@ -2,36 +2,23 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="./index.css">
-	<style>
-		#draggable {
-			width: 150px;
-			height: 150px;
-			padding: 0.5em;
-			border-style: solid;
-		}
-	</style>
-	
+	<link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
 <body>
-	<div id="draggable" class="ui-widget-content">
+	<div id="container">
 		<div id="graph-container"></div>
 	</div>
 	<h1>Hello World</h1>
-
-	<!-- Move Script -->
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script>
-		$(function () {
-			$("#draggable").draggable();
-		});
-	</script>
-	<!-- Load the JS file -->
-	<script src="./gitGraph.js"></script>
-	<!-- Custom Script -->
-	<script src="./index.js"></script>
+	<!-- Loading GitGraph library -->
+	<script src="./assets/libraries/gitGraph.js"></script>
+	<!-- Loading Panzoom library -->
+	<script src="./assets/libraries/panzoom.js"></script>
+	
+	<!--? Custom Scripts -->
+	<script src="./assets/javascript/index.js"></script>
+	<!-- Custom Graph to Git Graph -->
+	<script src="./assets/javascript/graph.js"></script>
 </body>
 
 </html>
