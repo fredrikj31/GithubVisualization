@@ -1,13 +1,11 @@
+*:focus {
+	outline: none;
+}
+
 #container {
 	overflow: hidden;
 	width: 1200px;
 	height: 500px;
-	border: solid;
-}
-
-/* Navbar */
-.navbar {
-	background-color: #172B4D;
 }
 
 /* Side bar */
