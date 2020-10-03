@@ -37,11 +37,12 @@ master.commit({
 	body: "More details about the feature...",
 	tag: "v1.2",
 	author: "Fredrik Johansen <test@mail.com>",
+	hash: "bec76a7",
 	style: {
 		// Specific style for this commit
 	},
 	onClick(commit) {
-		alert(`Commit ${commit.hash} selected`);
+		//alert(`Commit ${commit.hash} selected`);
 		console.log(commit);
 	},
 	/*onMouseOver(commit) {
