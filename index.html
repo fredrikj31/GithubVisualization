@@ -9,7 +9,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>GitHub Visualization</title>
+	<title>GitHub Visualization - Home</title>
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="./assets/libraries/bootstrap.min.css">
@@ -20,116 +20,296 @@
 	<!-- Template CSS -->
 	<link rel="stylesheet" href="./assets/css/template.css">
 
+	<!-- Custom CSS -->
 	<link rel="stylesheet" href="./assets/css/index.css">
 
 </head>
 
-<body id="page-top">
+<body>
 
-	<nav class="navbar navbar-expand navbar-dark bg-dark static-top">
-
-		<a class="navbar-brand mr-1" href="index.html"><b>GitHub Visualization</b></a>
-
-		<button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
-			<i class="fas fa-bars"></i>
-		</button>
-
-		<!-- Navbar Search -->
-		<form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-			<div class="input-group">
-				<input type="text" class="form-control" placeholder="Search for..." aria-label="Search"
-					aria-describedby="basic-addon2">
-				<div class="input-group-append">
-					<button class="btn btn-primary" type="button">
-						<i class="fas fa-search"></i>
-					</button>
-				</div>
-			</div>
-		</form>
-	</nav>
-
-	<div id="wrapper">
+	<div class="d-flex" id="wrapper">
 
 		<!-- Sidebar -->
-		<ul class="sidebar navbar-nav">
-			<li class="nav-item active">
-				<a class="nav-link" href="index.html">
-					<i class="fas fa-fw fa-book"></i>
-					<span>Repositories</span>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="index.html">
-					<i class="fas fa-fw fa-file-code"></i>
-					<span>Gists</span>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="index.html">
-					<i class="fas fa-fw fa-user"></i>
-					<span>User</span>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="index.html">
-					<i class="fas fa-fw fa-sitemap"></i>
-					<span>Organization</span>
-				</a>
-			</li>
-		</ul>
+		<div class="bg-dark" id="sidebar-wrapper">
+			<div class="sidebar-heading text-white"><b>GitHub Visualization</b></div>
+			<div class="list-group list-group-flush">
 
-		<div id="content-wrapper">
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white active"><i
+						class="fas fa-fw fa-home"></i> Home</a>
+				<a href="repository.html" class="list-group-item list-group-item-action bg-dark text-white"><i
+						class="fas fa-fw fa-book"></i> Repositories</a>
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i
+						class="fas fa-fw fa-file-code"></i> Gists</a>
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i
+						class="fas fa-fw fa-user"></i> User</a>
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i
+						class="fas fa-fw fa-sitemap"></i> Organization</a>
+			</div>
+		</div>
+		<!-- /#sidebar-wrapper -->
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+				<button class="btn btn-primary" id="menu-toggle"><i id="toggleArrow" class="fas fa-arrow-left"></i></button>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<i class="fas fa-hamburger"></i>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Dropdown
+							</a>
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
 
 			<div class="container-fluid">
-
 				<!--* Page Content -->
-				<div id="container" style="border-style: solid;">
-					<div id="graph-container"></div>
-				</div>
-				<h1 class="m-5">Hello World</h1>
-
-			</div>
-			<!-- /.container-fluid -->
-
-			<!-- Sticky Footer -->
-			<footer class="sticky-footer">
-				<div class="container my-auto">
-					<div class="copyright text-center my-auto">
-						<span>Copyright &copy; GitHub Visualization 2020</span>
+				<div class="row">
+					<div class="col-12">
+						<h1 class="mt-5 text-center">Welcome to GitHub Visualization</h1>
+					</div>
+					<div style="display: block; margin: auto;">
+						<svg width="650" height="200">
+							<g transform="translate(10, 10)">
+								<g>
+									<path
+										d="M 0 0 C 40 0 40 0 80 0 L 160 0 L 240 0 L 320 0 L 400 0 L 480 0 C 520 0 520 0 560 0"
+										fill="transparent" stroke="#F00" stroke-width="8" transform="translate(12, 12)">
+									</path>
+									<path
+										d="M 0 0 C 40 0 40 50 80 50 L 160 50 L 240 50 L 320 50 L 400 50 L 480 50 C 520 50 520 0 560 0"
+										fill="transparent" stroke="#0F0" stroke-width="8" transform="translate(12, 12)">
+									</path>
+									<path
+										d="M 80 50 C 120 50 120 100 160 100 L 240 100 L 320 100 C 360 100 360 50 400 50"
+										fill="transparent" stroke="#00F" stroke-width="8" transform="translate(12, 12)">
+									</path>
+								</g>
+								<g>
+									<g transform="translate(0, 0)">
+										<g>
+											<defs>
+												<circle cx="12" cy="12" r="12"
+													id="320bec04ce4c54e1ef2669555b2f607b8fa3e6fb" fill="#F00"></circle>
+												<clipPath id="clip-320bec04ce4c54e1ef2669555b2f607b8fa3e6fb">
+													<use href="#320bec04ce4c54e1ef2669555b2f607b8fa3e6fb"
+														xlink:href="#320bec04ce4c54e1ef2669555b2f607b8fa3e6fb"></use>
+												</clipPath>
+											</defs>
+											<use href="#320bec04ce4c54e1ef2669555b2f607b8fa3e6fb"
+												xlink:href="#320bec04ce4c54e1ef2669555b2f607b8fa3e6fb"
+												clip-path="url(#clip-320bec04ce4c54e1ef2669555b2f607b8fa3e6fb)"
+												stroke="" stroke-width="0"></use>
+										</g>
+										<g transform="translate(0, 0)"></g>
+									</g>
+									<g transform="translate(80, 50)">
+										<g>
+											<defs>
+												<circle cx="12" cy="12" r="12"
+													id="d8ac54caf51f8a083568b1314f8c3c3a5aebaa1a" fill="#0F0"></circle>
+												<clipPath id="clip-d8ac54caf51f8a083568b1314f8c3c3a5aebaa1a">
+													<use href="#d8ac54caf51f8a083568b1314f8c3c3a5aebaa1a"
+														xlink:href="#d8ac54caf51f8a083568b1314f8c3c3a5aebaa1a"></use>
+												</clipPath>
+											</defs>
+											<use href="#d8ac54caf51f8a083568b1314f8c3c3a5aebaa1a"
+												xlink:href="#d8ac54caf51f8a083568b1314f8c3c3a5aebaa1a"
+												clip-path="url(#clip-d8ac54caf51f8a083568b1314f8c3c3a5aebaa1a)"
+												stroke="" stroke-width="0"></use>
+										</g>
+										<g transform="translate(-80, 0)"></g>
+									</g>
+									<g transform="translate(160, 100)">
+										<g>
+											<defs>
+												<circle cx="12" cy="12" r="12"
+													id="834b84cdbed5c31a37d4910d6b382a56d97440c6" fill="#00F"></circle>
+												<clipPath id="clip-834b84cdbed5c31a37d4910d6b382a56d97440c6">
+													<use href="#834b84cdbed5c31a37d4910d6b382a56d97440c6"
+														xlink:href="#834b84cdbed5c31a37d4910d6b382a56d97440c6"></use>
+												</clipPath>
+											</defs>
+											<use href="#834b84cdbed5c31a37d4910d6b382a56d97440c6"
+												xlink:href="#834b84cdbed5c31a37d4910d6b382a56d97440c6"
+												clip-path="url(#clip-834b84cdbed5c31a37d4910d6b382a56d97440c6)"
+												stroke="" stroke-width="0"></use>
+										</g>
+										<g transform="translate(-160, 0)"></g>
+									</g>
+									<g transform="translate(240, 100)">
+										<g>
+											<defs>
+												<circle cx="12" cy="12" r="12"
+													id="e436299f9ceed71a12e7de15f41b0b8e655369e7" fill="#00F"></circle>
+												<clipPath id="clip-e436299f9ceed71a12e7de15f41b0b8e655369e7">
+													<use href="#e436299f9ceed71a12e7de15f41b0b8e655369e7"
+														xlink:href="#e436299f9ceed71a12e7de15f41b0b8e655369e7"></use>
+												</clipPath>
+											</defs>
+											<use href="#e436299f9ceed71a12e7de15f41b0b8e655369e7"
+												xlink:href="#e436299f9ceed71a12e7de15f41b0b8e655369e7"
+												clip-path="url(#clip-e436299f9ceed71a12e7de15f41b0b8e655369e7)"
+												stroke="" stroke-width="0"></use>
+										</g>
+										<g transform="translate(-240, 0)"></g>
+									</g>
+									<g transform="translate(320, 100)">
+										<g>
+											<defs>
+												<circle cx="12" cy="12" r="12"
+													id="7e3a5bc7800513acaa08e0cd808517da20a217b1" fill="#00F"></circle>
+												<clipPath id="clip-7e3a5bc7800513acaa08e0cd808517da20a217b1">
+													<use href="#7e3a5bc7800513acaa08e0cd808517da20a217b1"
+														xlink:href="#7e3a5bc7800513acaa08e0cd808517da20a217b1"></use>
+												</clipPath>
+											</defs>
+											<use href="#7e3a5bc7800513acaa08e0cd808517da20a217b1"
+												xlink:href="#7e3a5bc7800513acaa08e0cd808517da20a217b1"
+												clip-path="url(#clip-7e3a5bc7800513acaa08e0cd808517da20a217b1)"
+												stroke="" stroke-width="0"></use>
+										</g>
+										<g transform="translate(-320, 0)">
+											<g transform="translate(320, 34)">
+												<g>
+													<rect width="99.875" height="31" rx="10" fill="white" stroke="#00F">
+													</rect><text alignment-baseline="central"
+														dominant-baseline="central" fill="#00F"
+														style="font: normal 14pt Arial" x="10" y="15.5">Feature 2</text>
+												</g>
+											</g>
+										</g>
+									</g>
+									<g transform="translate(400, 50)">
+										<g>
+											<defs>
+												<circle cx="12" cy="12" r="12"
+													id="3377ef488d1302a7b64cc8e608243673e4efe9f3" fill="#0F0"></circle>
+												<clipPath id="clip-3377ef488d1302a7b64cc8e608243673e4efe9f3">
+													<use href="#3377ef488d1302a7b64cc8e608243673e4efe9f3"
+														xlink:href="#3377ef488d1302a7b64cc8e608243673e4efe9f3"></use>
+												</clipPath>
+											</defs>
+											<use href="#3377ef488d1302a7b64cc8e608243673e4efe9f3"
+												xlink:href="#3377ef488d1302a7b64cc8e608243673e4efe9f3"
+												clip-path="url(#clip-3377ef488d1302a7b64cc8e608243673e4efe9f3)"
+												stroke="" stroke-width="0"></use>
+										</g>
+										<g transform="translate(-400, 0)"></g>
+									</g>
+									<g transform="translate(480, 50)">
+										<g>
+											<defs>
+												<circle cx="12" cy="12" r="12"
+													id="6d99a918988d91efa02b08c5b9b7dc8b8056e46f" fill="#0F0"></circle>
+												<clipPath id="clip-6d99a918988d91efa02b08c5b9b7dc8b8056e46f">
+													<use href="#6d99a918988d91efa02b08c5b9b7dc8b8056e46f"
+														xlink:href="#6d99a918988d91efa02b08c5b9b7dc8b8056e46f"></use>
+												</clipPath>
+											</defs>
+											<use href="#6d99a918988d91efa02b08c5b9b7dc8b8056e46f"
+												xlink:href="#6d99a918988d91efa02b08c5b9b7dc8b8056e46f"
+												clip-path="url(#clip-6d99a918988d91efa02b08c5b9b7dc8b8056e46f)"
+												stroke="" stroke-width="0"></use>
+										</g>
+										<g transform="translate(-480, 0)">
+											<g transform="translate(480, 34)">
+												<g>
+													<rect width="99.875" height="31" rx="10" fill="white" stroke="#0F0">
+													</rect><text alignment-baseline="central"
+														dominant-baseline="central" fill="#0F0"
+														style="font: normal 14pt Arial" x="10" y="15.5">Feature 1</text>
+												</g>
+											</g>
+										</g>
+									</g>
+									<g transform="translate(560, 0)">
+										<g>
+											<defs>
+												<circle cx="12" cy="12" r="12"
+													id="2240c4ff33298c004e945091b0de503d341e951f" fill="#F00"></circle>
+												<clipPath id="clip-2240c4ff33298c004e945091b0de503d341e951f">
+													<use href="#2240c4ff33298c004e945091b0de503d341e951f"
+														xlink:href="#2240c4ff33298c004e945091b0de503d341e951f"></use>
+												</clipPath>
+											</defs>
+											<use href="#2240c4ff33298c004e945091b0de503d341e951f"
+												xlink:href="#2240c4ff33298c004e945091b0de503d341e951f"
+												clip-path="url(#clip-2240c4ff33298c004e945091b0de503d341e951f)"
+												stroke="" stroke-width="0"></use>
+										</g>
+										<g transform="translate(-560, 0)">
+											<g transform="translate(560, 34)">
+												<g>
+													<rect width="77.828125" height="31" rx="10" fill="white"
+														stroke="#F00"></rect><text alignment-baseline="central"
+														dominant-baseline="central" fill="#F00"
+														style="font: normal 14pt Arial" x="10" y="15.5">Master</text>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</g>
+						</svg>
 					</div>
 				</div>
-			</footer>
+				<div class="row mt-3 text-center">
+					<div class="col-6">
+						<h3>Hello World 1</h3>
+					</div>
+					<div class="col-6">
+						<h3>Hello World 2</h3>
+					</div>
+				</div>
 
+
+			</div>
 		</div>
-		<!-- /.content-wrapper -->
+		<!-- /#page-content-wrapper -->
 
 	</div>
 	<!-- /#wrapper -->
 
-	<!-- Scroll to Top Button-->
-	<a class="scroll-to-top rounded" href="#page-top">
-		<i class="fas fa-angle-up"></i>
-	</a>
-
 	<!-- Font Awesome -->
 	<script src="./assets/libraries/fontawesome.min.js"></script>
 
-	<!-- JQuery-->
+	<!-- JQuery -->
 	<script src="./assets/libraries/jquery.min.js"></script>
-	<!-- Popper JS -->
+	<!-- Popper -->
 	<script src="./assets/libraries/popper.js"></script>
 	<!-- Bootstrap JS -->
 	<script src="./assets/libraries/bootstrap.min.js"></script>
-	<!-- Loading GitGraph library -->
+	<!-- GitGraph -->
 	<script src="./assets/libraries/gitGraph.js"></script>
-	<!-- Loading Panzoom library -->
-	<script src="./assets/libraries/panzoom.js"></script>
 
 	<!--? Custom Scripts -->
 	<script src="./assets/javascript/index.js"></script>
-	<!-- Custom Graph to Git Graph -->
-	<script src="./assets/javascript/graph.js"></script>
 
+	<!-- Welcome Graph -->
+	<script src="./assets/javascript/welcomeGraph.js"></script>
 </body>
 
 </html>

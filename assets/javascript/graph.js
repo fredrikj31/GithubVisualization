@@ -2,7 +2,8 @@
 const graphContainer = document.getElementById("graph-container");
 
 const options = {
-	orientation: "horizontal-reverse",
+	orientation: "horizontal",
+	//orientation: "horizontal-reverse",
 	template: GitgraphJS.templateExtend("metro", {
 		colors: ["#F00", "#0F0", "#00F"], // branches colors, 1 per column
 		branch: {

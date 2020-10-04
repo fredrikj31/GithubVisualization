@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>GitHub Visualization</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./assets/libraries/bootstrap.min.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="./assets/libraries/fontawesome.min.css">
+
+	<!-- Chart.JS -->
+	<link rel="stylesheet" href="./assets/libraries/Chart.min.css">
+
+	<!-- Template CSS -->
+	<link rel="stylesheet" href="./assets/css/template.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="./assets/css/index.css">
+
+</head>
+
+<body>
+
+	<div class="d-flex" id="wrapper">
+
+		<!-- Sidebar -->
+		<div class="bg-dark" id="sidebar-wrapper">
+			<div class="sidebar-heading text-white"><b>GitHub Visualization</b></div>
+			<div class="list-group list-group-flush">
+
+				<a href="index.html" class="list-group-item list-group-item-action bg-dark text-white"><i
+						class="fas fa-fw fa-home"></i> Home</a>
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white active"><i
+						class="fas fa-fw fa-book"></i> Repositories</a>
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i
+						class="fas fa-fw fa-file-code"></i> Gists</a>
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i
+						class="fas fa-fw fa-user"></i> User</a>
+				<a href="#" class="list-group-item list-group-item-action bg-dark text-white"><i
+						class="fas fa-fw fa-sitemap"></i> Organization</a>
+			</div>
+		</div>
+		<!-- /#sidebar-wrapper -->
+
+		<!-- Page Content -->
+		<div id="page-content-wrapper">
+
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom">
+				<button class="btn btn-primary" id="menu-toggle"><i id="toggleArrow" class="fas fa-arrow-left"></i></button>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<i class="fas fa-hamburger"></i>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Dropdown
+							</a>
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="container-fluid">
+				<!--* Page Content -->
+				<div class="row">
+					<div class="col-6">
+						<h3 class="mb-3">Tree View:</h3>
+						<div id="container">
+							<div id="graph-container"></div>
+						</div>
+					</div>
+					<div class="col-6"></div>
+				</div>
+				<div class="row">
+					<div class="col-6" style="height: 200px;">
+						<h3 class="text-center mb-3">Languages:</h3>
+						<canvas id="myChart"></canvas>
+					</div>
+					<div class="col-6">
+						<h1 class="m-5">Hello World</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /#page-content-wrapper -->
+
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- Font Awesome -->
+	<script src="./assets/libraries/fontawesome.min.js"></script>
+
+	<!-- JQuery -->
+	<script src="./assets/libraries/jquery.min.js"></script>
+	<!-- Popper -->
+	<script src="./assets/libraries/popper.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="./assets/libraries/bootstrap.min.js"></script>
+	<!-- GitGraph -->
+	<script src="./assets/libraries/gitGraph.js"></script>
+	<!-- Panzoom -->
+	<script src="./assets/libraries/panzoom.js"></script>
+	<!-- Chart.JS -->
+	<script src="./assets/libraries/Chart.min.js"></script>
+
+	<!--? Custom Scripts -->
+	<script src="./assets/javascript/index.js"></script>
+	<!-- Custom Graph to Git Graph -->
+	<script src="./assets/javascript/graph.js"></script>
+	<!-- Custom Chart.js -->
+	<script src="./assets/javascript/chart.js"></script>
+	<!-- Panzoom -->
+	<script>
+		// just grab a DOM element
+		var element = document.querySelector("#graph-container");
+
+		// And pass it to panzoom
+		panzoom(element, {
+			smoothScroll: false,
+		});
+	</script>
+
+</body>
+
+</html>
