@@ -1,4 +1,4 @@
-$("#menu-toggle").click(function(e) {
+$("#menu-toggle").click(function (e) {
 	e.preventDefault();
 	$("#wrapper").toggleClass("toggled");
 	if ($("#wrapper").hasClass("toggled") == true) {
@@ -8,4 +8,9 @@ $("#menu-toggle").click(function(e) {
 		$("#toggleArrow").removeClass("fa-arrow-right");
 		$("#toggleArrow").addClass("fa-arrow-left");
 	}
-  });
+});
+
+
+function alertCommit(commit) {
+	alert(commit);
+}

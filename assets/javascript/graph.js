@@ -45,6 +45,7 @@ master.commit({
 	onClick(commit) {
 		//alert(`Commit ${commit.hash} selected`);
 		console.log(commit);
+		alertCommit(commit.hash);
 	},
 	/*onMouseOver(commit) {
 		alert(`Commit ${commit.hash} selected`);

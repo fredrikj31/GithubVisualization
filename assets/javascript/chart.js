@@ -1,5 +1,8 @@
 var ctx = document.getElementById("myChart").getContext("2d");
 
+ctx.canvas.width = 600;
+ctx.canvas.height = 200;
+
 var myDoughnutChart = new Chart(ctx, {
 	type: "doughnut",
 	data: {
@@ -15,6 +18,6 @@ var myDoughnutChart = new Chart(ctx, {
 	},
 	options: {
 		responsive: true,
-		maintainAspectRatio: false,
+		maintainAspectRatio: true,
 	},
 });

@@ -3,6 +3,7 @@
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 /** Sidebar */
@@ -11,7 +12,7 @@
 }
 
 #sidebar-wrapper {
-	min-height: 100vh;
+	min-height: 100%;
 	margin-left: -15rem;
 	-webkit-transition: margin 0.25s ease-out;
 	-moz-transition: margin 0.25s ease-out;
@@ -34,7 +35,7 @@
 }
 
 #page-content-wrapper {
-	min-width: 100vw;
+	min-width: 100%;
 }
 
 #wrapper.toggled #sidebar-wrapper {
